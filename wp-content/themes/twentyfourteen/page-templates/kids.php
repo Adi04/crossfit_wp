@@ -25,20 +25,24 @@
         <div class="clear"></div>
     	<h3>Kids Programs</h3>
         <div class="left">
-         	<h6>Lorem ipsum dolor sit amet</h6>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. </p>
+         	<?php
+				// Start the Loop.
+				while ( have_posts() ) : the_post();
+
+					// Include the page content template.
+					get_template_part( 'content', 'page' );
+
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( comments_open() || get_comments_number() ) {
+						comments_template();
+					}
+				endwhile;
+			?>
            <img src="<?php bloginfo('template_url'); ?>/images/a8.jpg" style="float:left; ">
            <div class="clear"></div>
-            <ul>
-            	<li> Want to get in shape but don’t know how to design your own program</li>
-                <li>Have lost interest in your gym ‘routine’</li>
-                <li>Dislike the impersonal “GloboGym” environment</li>
-                <li> Think you don’t have time to exercise</li>
-                <li> Are looking to get strong and faster for your sport</li>
-                <li> Want to see REAL results with your fitness program</li>
-            </ul>
+            <?php echo the_field('image_field');?>
             <div class="clear"></div>
-            <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+           <?php echo the_field('text_field');?>
             <br><br>
         </div>
         <div class="right">

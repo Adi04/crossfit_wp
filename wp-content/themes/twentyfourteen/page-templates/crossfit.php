@@ -39,17 +39,13 @@
 					}
 				endwhile;
 			?>
-           <img src="<?php bloginfo('template_url'); ?>/images/a7.jpg" style="float:left; margin-right:30px;">
-            <ul>
-            	<li> Want to get in shape but don’t know how to design your own program</li>
-                <li>Have lost interest in your gym ‘routine’</li>
-                <li>Dislike the impersonal “GloboGym” environment</li>
-                <li> Think you don’t have time to exercise</li>
-                <li> Are looking to get strong and faster for your sport</li>
-                <li> Want to see REAL results with your fitness program</li>
-            </ul>
+          <?php echo the_field('image_field');?>
+				
             <div class="clear"></div>
-            <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+            <?php echo the_field('text_field');?>
+           
+            <div class="clear"></div>
+            
             <br><br>
         </div>
         <div class="right">
