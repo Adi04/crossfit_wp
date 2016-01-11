@@ -11,7 +11,7 @@
 ?>
 <?php get_header(); ?>
 
-<center><img src="images/w8.jpg"></center>
+<center><img src="<?php bloginfo('template_url'); ?>/images/w8.jpg"></center>
 
 <div class="info">
     <div class="container">
@@ -28,7 +28,7 @@
         <div class="left">
          	<h6>Lorem ipsum dolor sit amet</h6>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. </p>
-           <img src="images/a6.jpg" style="float:left; margin-right:30px;">
+           <img src="<?php bloginfo('template_url'); ?>/images/a6.jpg" style="float:left; margin-right:30px;">
             <ul>
             	<li> Want to get in shape but don’t know how to design your own program</li>
                 <li>Have lost interest in your gym ‘routine’</li>

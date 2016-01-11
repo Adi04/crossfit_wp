@@ -10,7 +10,7 @@
  */
 ?>
 <?php get_header(); ?>
-<center><img src="images/w5.jpg"></center>
+<center><img src="<?php bloginfo('template_url'); ?>/images/w5.jpg"></center>
 
 <div class="info">
     <div class="container">
@@ -18,18 +18,18 @@
         <br>
         <div class="left">
         <p style="margin:0;">Please call or email us today to set up your complimentary trial class – let’s get started!</p>
-         	<img src="images/q5.jpg" style="float:left; margin-right:10px; margin-top:8px">
+         	<img src="<?php bloginfo('template_url'); ?>/images/q5.jpg" style="float:left; margin-right:10px; margin-top:8px">
             <p>93 Green Lane Markham, ON L3T 6K6</p>
             
-            <img src="images/q6.jpg" style="float:left;margin-right:10px;">
+            <img src="<?php bloginfo('template_url'); ?>/images/q6.jpg" style="float:left;margin-right:10px;">
             <p style=" margin:0;">905-889-2000</p>
             <br>
-            <img src="images/q7.jpg" style="float:left;margin-right:10px;">
+            <img src="<?php bloginfo('template_url'); ?>/images/q7.jpg" style="float:left;margin-right:10px;">
             <p style="margin:0;">info@crossfitsolidground.com</p>
             <br><br>
-            <a href=""><img src="images/face.png" style="float:left; margin:3px;"></a>
-            <a href=""><img src="images/tweet.png" style="float:left; margin:3px;"></a>
-            <a href=""><img src="images/in.png" style="float:left; margin:3px;"></a>
+            <a href=""><img src="<?php bloginfo('template_url'); ?>/images/face.png" style="float:left; margin:3px;"></a>
+            <a href=""><img src="<?php bloginfo('template_url'); ?>/images/tweet.png" style="float:left; margin:3px;"></a>
+            <a href=""><img src="<?php bloginfo('template_url'); ?>/images/in.png" style="float:left; margin:3px;"></a>
             <br><br>
         </div>
         <div class="right">

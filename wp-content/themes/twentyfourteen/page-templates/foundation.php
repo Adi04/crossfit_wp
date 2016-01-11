@@ -10,7 +10,7 @@
  */
 ?>
 <?php get_header(); ?>
-<center><img src="images/w7.jpg"></center>
+<center><img src="<?php bloginfo('template_url'); ?>/images/w7.jpg"></center>
 
 <div class="info">
     <div class="container">

@@ -10,7 +10,7 @@
  */
 ?>
 <?php get_header(); ?>
-<center><img src="images/w1.jpg"></center>
+<center><img src="<?php bloginfo('template_url'); ?>/images/w1.jpg"></center>
 
 <div class="info">
     <div class="container">
@@ -36,7 +36,7 @@
 Justin first stumbled upon the sport of CrossFit during his time on the varsity baseball team at Brock University. His teammates were taking their fitness to another level, implementing some of the baseline CrossFit workouts into their training regime. After a lifetime of training in traditional “globo gyms” and eating whatever he wanted, Justin found CrossFit to be extremely challenging. His initial experience was a “reality check” – at 5’8” and 195 lbs, he believed he was strong and fit. Once he immersed himself in the CrossFit community and began training consistently, not only was he able to transform his body (dropping 25 lbs and a significant amount of body fat), but he also improved his lifestyle to facilitate his growth as an athlete.<br>
 Justin is currently one of Ontario’s top CrossFit athletes and a talented coach who is sought after by multiple CrossFit gyms. His passion is to inspire people to achieve their goals and to create life-changing personal achievements of their own.</p><br>
  <h6>Dan Sinclair – Trainer/Coach, Assistant Manager</h6><br>
-            <img src="images/w3.png" style="float:left; margin-right:40px; margin-bottom:20px">
+            <img src="<?php bloginfo('template_url'); ?>/images/w3.png" style="float:left; margin-right:40px; margin-bottom:20px">
             <ul>
             	<li>CrossFit Level 1 Instructor</li>
                 <li>Seneca College – 1 year degree in Certified Fitness Professional</li>
@@ -50,7 +50,7 @@ Justin is currently one of Ontario’s top CrossFit athletes and a talented coac
 In the following years, Dan’s natural leadership skills and service-first mindset have grated him much needed experience. He has been a successful small business owner, an integral part of a GoodLife Fitness club start-up team, a private consultant for fitness clubs in the GTA, as well an elite level CrossFit trainer and manager at one of the longest standing CrossFit clubs in Ontario.<br>
 Dan’s commitment to his clients is second to none. He continues to exceed expectations, helping the people he works with to achieve a level of performance and life improvement they hadn’t previously thought possible. His ability to attract a team of dedicated individuals and lead by example is sought after in the fitness industry and the success of his clients and projects speaks for itself.</p><br>
 <h6>Dan Sinclair – Trainer/Coach, Assistant Manager</h6><br>
-            <img src="images/w4.png" style="float:left; margin-right:40px; margin-bottom:20px">
+            <img src="<?php bloginfo('template_url'); ?>/images/w4.png" style="float:left; margin-right:40px; margin-bottom:20px">
             <ul>
             	<li>CrossFit Level 1 Instructor</li>
                 <li>Queen’s University – B.Sc. in Biology, with a minor in Exercise Science</li>

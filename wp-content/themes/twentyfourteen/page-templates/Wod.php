@@ -11,7 +11,7 @@
 ?>
 <?php get_header(); ?>
 
-<center><img src="images/s1.jpg"></center>
+<center><img src="<?php bloginfo('template_url'); ?>/images/s1.jpg"></center>
 
 <div class="info">
     <div class="container">
@@ -148,7 +148,7 @@
             <div class="clear"></div><br>
             <div style="width:100%; float:left; border-bottom:1px solid #ccc;"></div>
             <div class="clear"></div><br>
-            <a href=""><img src="images/s2.jpg" style="float:right"></a>
+            <a href=""><img src="<?php bloginfo('template_url'); ?>/images/s2.jpg" style="float:right"></a>
             <div class="clear"></div><br><br><br>
         </div>
         <div class="right">

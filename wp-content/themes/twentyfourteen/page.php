@@ -19,7 +19,7 @@
         <div class="clear"></div><br><br>
         <center><h4>Welcome To CrossFit Solid Ground!</h4></center>
         <center><h5>Thank you for visiting CrossFitSolidGround.com – <span style="color:#bf0d0d">Providing CrossFit Training in Markham, Thornhill and <br>Richmond Hill</span> – we hope you stay for a while and come back often!</h5></center><br>
-        <img src="images/z7.jpg" style="float:right; margin-left:20px;">
+        <img src="<?php bloginfo('template_url'); ?>/images/z7.jpg" style="float:right; margin-left:20px;">
         <p style="text-align:justify;">The Solid Ground Athletic Academy is an “Elite School of Fitness” serving the Markham, Thornhill and Richmond Hill CrossFit communities and athletes of every kind.  We work with people – weekend warriors, high level athletes and everyone in between – helping them take their fitness and their quality of life to a whole new level.  If you’re looking for CrossFit in Markham, CrossFit in Thornhill, or CrossFit in Richmond Hill, you’ve come to the right place.</p>
         <div class="clear"></div><br>
     </div>

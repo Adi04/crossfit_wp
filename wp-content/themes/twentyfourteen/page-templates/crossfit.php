@@ -11,14 +11,14 @@
 ?>
 <?php get_header(); ?>
 
-<center><img src="images/w8.jpg"></center>
+<center><img src="<?php bloginfo('template_url'); ?>/images/w8.jpg"></center>
 
 <div class="info">
     <div class="container">
     	<br>
     	<ul class="fancy">
- 			<li><a href="crossfit.php" class="active">CrossFit</a></li>
-            <li><a href="barbella.php">Barbell Club</a></li>
+ 			<li><a href="<?php bloginfo('template_url'); ?>/crossfit.php" class="active">CrossFit</a></li>
+            <li><a href="<?php bloginfo('template_url'); ?>/barbella.php">Barbell Club</a></li>
             <li><a href="personal.php">Personal Training</a></li>
             <li><a href="team-training.php">Team Training</a></li>
             <li><a href="kids.php">Kids Programs</a></li> 
@@ -26,9 +26,20 @@
         <div class="clear"></div>
     	<h3>Crossfit</h3>
         <div class="left">
-         	<h6>Lorem ipsum dolor sit amet</h6>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. </p>
-           <img src="images/a7.jpg" style="float:left; margin-right:30px;">
+         	<?php
+				// Start the Loop.
+				while ( have_posts() ) : the_post();
+
+					// Include the page content template.
+					get_template_part( 'content', 'page' );
+
+					// If comments are open or we have at least one comment, load up the comment template.
+					if ( comments_open() || get_comments_number() ) {
+						comments_template();
+					}
+				endwhile;
+			?>
+           <img src="<?php bloginfo('template_url'); ?>/images/a7.jpg" style="float:left; margin-right:30px;">
             <ul>
             	<li> Want to get in shape but don’t know how to design your own program</li>
                 <li>Have lost interest in your gym ‘routine’</li>
@@ -52,4 +63,4 @@
             </div>
         </div>
  </div>
-<?php get_header(); ?>
+<?php get_footer(); ?>

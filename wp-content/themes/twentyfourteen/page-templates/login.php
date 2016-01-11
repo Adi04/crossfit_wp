@@ -11,7 +11,7 @@
 ?>
 <?php get_header(); ?>
 
-<center><img src="images/s3.jpg"></center>
+<center><img src="<?php bloginfo('template_url'); ?>/images/s3.jpg"></center>
 
 <div class="info">
     <div class="container">
