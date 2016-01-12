@@ -39,10 +39,11 @@
 					}
 				endwhile;
 			?>
-          <?php echo the_field('image_field');?>
-				
+         			
             <div class="clear"></div>
             <?php echo the_field('text_field');?>
+			<div class="clear"></div>
+            <?php echo the_field('image_field');?>
             <br><br>
         </div>
         <div class="right">

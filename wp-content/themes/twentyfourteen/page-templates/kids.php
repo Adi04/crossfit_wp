@@ -38,12 +38,13 @@
 					}
 				endwhile;
 			?>
-           <img src="<?php bloginfo('template_url'); ?>/images/a8.jpg" style="float:left; ">
-           <div class="clear"></div>
+             <div class="clear"></div>
+			<?php echo the_field('text_field');?>
+			
+		   <div class="clear"></div>
             <?php echo the_field('image_field');?>
-            <div class="clear"></div>
-           <?php echo the_field('text_field');?>
-            <br><br>
+           
+		   <br><br>
         </div>
         <div class="right">
         	<div class="contact">

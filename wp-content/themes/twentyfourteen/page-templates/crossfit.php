@@ -17,8 +17,8 @@
     <div class="container">
     	<br>
     	<ul class="fancy">
- 			<li><a href="<?php bloginfo('template_url'); ?>/crossfit.php" class="active">CrossFit</a></li>
-            <li><a href="<?php bloginfo('template_url'); ?>/barbella.php">Barbell Club</a></li>
+ 			<li><a href="<?php bloginfo('template_url'); ?>/page-templates/crossfit.php" class="active">CrossFit</a></li>
+            <li><a href="<?php bloginfo('template_url'); ?>/page-templates/barbella.php">Barbell Club</a></li>
             <li><a href="personal.php">Personal Training</a></li>
             <li><a href="team-training.php">Team Training</a></li>
             <li><a href="kids.php">Kids Programs</a></li> 

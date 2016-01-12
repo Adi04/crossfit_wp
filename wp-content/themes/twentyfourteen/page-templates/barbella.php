@@ -16,13 +16,18 @@
 <div class="info">
     <div class="container">
     	<br>
-    	<ul class="fancy">
- 			<li><a href="crossfit.php">CrossFit</a></li>
-            <li><a href="barbella.php" class="active">Barbell Club</a></li>
-            <li><a href="personal.php">Personal Training</a></li>
-            <li><a href="team-training.php">Team Training</a></li>
-            <li><a href="kids.php">Kids Programs</a></li> 
-        </ul>
+		<?php 
+		$querystr = "
+    SELECT * 
+    FROM $wpdb->posts wp_posts,
+    WHERE post_title = 'Programs'
+    
+    ";
+	echo "$querystr";
+//echo "<pre>";print_r($wpdb); 
+//die();     
+	?>
+    	
         <div class="clear"></div>
     	<h3>Barbella Club</h3>
         <div class="left">
@@ -39,10 +44,11 @@
 					}
 				endwhile;
 			?>
-          <?php echo the_field('image_field');?>
-				
+         
+			
+            <?php echo the_field('text_field');?>	
             <div class="clear"></div>
-            <?php echo the_field('text_field');?>
+			 <?php echo the_field('image_field');?>
             <br><br>
         </div>
         <div class="right">
